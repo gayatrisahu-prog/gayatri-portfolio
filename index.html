@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gayatri Sahu - Computer Science and Engineering student portfolio">
+  <title>Gayatri Sahu | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; color: #1f2937; background: #f8fafc; line-height: 1.6; }
+    nav { background: #0f172a; color: white; padding: 16px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+    .logo { font-weight: 700; font-size: 20px; }
+    header { padding: 90px 8%; background: #eaf4ff; }
+    header h1 { font-size: 48px; color: #0f172a; }
+    header h2 { font-size: 22px; margin: 8px 0 18px; color: #2563eb; }
+    header p { max-width: 680px; font-size: 17px; }
+    .button { display: inline-block; margin-top: 24px; padding: 11px 18px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; }
+    section { padding: 55px 8%; }
+    h3 { font-size: 28px; color: #0f172a; margin-bottom: 22px; }
+    .about, .education { max-width: 850px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: white; border: 1px solid #dbe4ee; padding: 8px 13px; border-radius: 20px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 4px 14px rgba(15,23,42,.05); }
+    .card h4 { color: #2563eb; font-size: 19px; margin-bottom: 8px; }
+    .card p { font-size: 14px; }
+    .tag { display: inline-block; margin: 12px 5px 0 0; padding: 4px 9px; background: #eff6ff; color: #1d4ed8; border-radius: 12px; font-size: 12px; }
+    #contact { background: #0f172a; color: white; }
+    #contact h3 { color: white; }
+    #contact a { color: #93c5fd; }
+    footer { text-align: center; padding: 18px; background: #020617; color: #cbd5e1; font-size: 13px; }
+    @media (max-width: 650px) {
+      nav .links { display: none; }
+      header { padding-top: 60px; }
+      header h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Gayatri Sahu</div>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <p>Hello, I'm</p>
+    <h1>Gayatri Sahu</h1>
+    <h2>Computer Science and Engineering Student</h2>
+    <p>I am a student at the University of South Florida interested in software engineering, AI, and robotics. I enjoy building projects with Python and C while continuing to learn web development.</p>
+    <a class="button" href="#projects">View My Projects</a>
+  </header>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <div class="about"><p>I enjoy learning by building. My current focus is NOVA, an AI companion robot project that explores voice interaction, computer vision, and intelligent behavior. I have also worked with Python APIs, object-oriented programming concepts, C programming, and small application projects.</p></div>
+  </section>
+
+  <section id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skills">
+      <span class="skill">Python</span><span class="skill">C</span><span class="skill">API Integration</span><span class="skill">OOP Fundamentals</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">OpenCV</span><span class="skill">PyCharm</span><span class="skill">VS Code</span><span class="skill">HTML (Learning)</span><span class="skill">CSS (Learning)</span><span class="skill">JavaScript (Learning)</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="card"><h4>NOVA - AI Companion Robot</h4><p>Developing an AI companion project with voice interaction, speech technologies, computer vision, and modular Python components.</p><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">AI</span></div>
+      <div class="card"><h4>Python Application Projects</h4><p>Built small Python applications including a calculator and banking program while practicing APIs, functions, input validation, and OOP fundamentals.</p><span class="tag">Python</span><span class="tag">APIs</span><span class="tag">OOP</span></div>
+      <div class="card"><h4>CodePath Web Development</h4><p>Currently learning HTML, CSS, and JavaScript through CodePath and building a foundation in front-end web development.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <div class="card"><h4>C Programming Projects</h4><p>Created programs using arrays, functions, loops, validation, and structured problem solving, including transportation cost and lunch-order analysis programs.</p><span class="tag">C</span><span class="tag">Arrays</span><span class="tag">Functions</span></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h3>Education</h3>
+    <div class="education"><strong>University of South Florida (USF)</strong><br>Bachelor of Science in Computer Science and Engineering<br>Tampa, Florida</div>
+  </section>
+
+  <section id="contact">
+    <h3>Let's Connect</h3>
+    <p>Email: <a href="mailto:gayatri.sahu.2029@gmail.com">gayatri.sahu.2029@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/gayatrisahu-prog" target="_blank" rel="noopener">github.com/gayatrisahu-prog</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/gayatri-sahu-2006gs2029" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/gayatri-sahu-2006gs2029</a></p>
+  </section>
+
+  <footer>© 2026 Gayatri Sahu · Built with HTML & CSS</footer>
+</body>
+</html>
